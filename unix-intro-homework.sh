@@ -27,7 +27,7 @@ pwd
 
 -----
 
-/Users/eriq
+/Users/w_c_funk
 
 
 #### Ex. 2:  Use echo to print `my name is xxxx` to stdout.  Where `xxxx` is 
@@ -43,40 +43,98 @@ my name is Eric
 
 #### Ex. 3:  Now, for real print your name, as in Ex. 2, but put your name in there:
 
+echo "my name is W. Chris Funk"
 
+------
+my name is W. Chris Funk
 
 #### Ex. 3: print the absolute path of the top level of the homework directory where this is
 
+(I just dragged the directory into iTerm2)
 
+------
+/Users/w_c_funk/OneDrive\ -\ Colostate/MY\ COURSES/BZ581A2_bioinformatics_and_computing/BZ581A2_2022/BZ581A2_2022_week02/cons-genomics-homework-repo
 
 #### Ex. 4: list, in long format, all the files and directories in this homework directory
 
+ls -l /Users/w_c_funk/OneDrive\ -\ Colostate/MY\ COURSES/BZ581A2_bioinformatics_and_computing/BZ581A2_2022/BZ581A2_2022_week02/cons-genomics-homework-repo
 
+------
+total 48
+-rw-------@  1 w_c_funk  admin   495B Jan 25 11:21 README.md
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:21 bam/
+-rw-------@  1 w_c_funk  admin   205B Jan 25 11:22 cons-genomics-homework-repo.Rproj
+-rwxr-xr-x@  1 w_c_funk  admin    96B Jan 25 11:21 count_files.sh*
+drwxr-xr-x@ 66 w_c_funk  admin   2.1K Jan 25 11:21 fastq/
+drwxr-xr-x@  3 w_c_funk  admin    96B Jan 25 11:21 metadata/
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:21 sam/
+drwxr-xr-x@  7 w_c_funk  admin   224B Jan 25 11:21 silly/
+-rw-------@  1 w_c_funk  admin   9.0K Jan 25 11:36 unix-intro-homework.sh
 
 #### Ex. 5: There is a directory called `.git` in here that didn't get listed. 
 ####        List everything again, but make sure `.git` is in the output
 
+ls -la /Users/w_c_funk/OneDrive\ -\ Colostate/MY\ COURSES/BZ581A2_bioinformatics_and_computing/BZ581A2_2022/BZ581A2_2022_week02/cons-genomics-homework-repo
 
+------
+total 56
+drwxr-xr-x@ 15 w_c_funk  admin   480B Jan 25 11:22 ./
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:41 ../
+-rw-------@  1 w_c_funk  admin     0B Jan 25 11:22 .Rhistory
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:21 .Rproj.user/
+drwxr-xr-x@ 13 w_c_funk  admin   416B Jan 25 11:43 .git/
+-rw-------@  1 w_c_funk  admin   140B Jan 25 11:21 .gitignore
+-rw-------@  1 w_c_funk  admin   495B Jan 25 11:21 README.md
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:21 bam/
+-rw-------@  1 w_c_funk  admin   205B Jan 25 11:22 cons-genomics-homework-repo.Rproj
+-rwxr-xr-x@  1 w_c_funk  admin    96B Jan 25 11:21 count_files.sh*
+drwxr-xr-x@ 66 w_c_funk  admin   2.1K Jan 25 11:21 fastq/
+drwxr-xr-x@  3 w_c_funk  admin    96B Jan 25 11:21 metadata/
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:21 sam/
+drwxr-xr-x@  7 w_c_funk  admin   224B Jan 25 11:21 silly/
+-rw-------@  1 w_c_funk  admin   9.0K Jan 25 11:36 unix-intro-homework.sh
 
 #### Ex. 6: What are the other hidden files/directories that show up
 ####        in the above listing? Just list them below (no special command)
 ####        to ge them, since you did that above)
 
-
+drwxr-xr-x@ 15 w_c_funk  admin   480B Jan 25 11:22 ./
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:41 ../
+-rw-------@  1 w_c_funk  admin     0B Jan 25 11:22 .Rhistory
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:21 .Rproj.user/
+drwxr-xr-x@ 13 w_c_funk  admin   416B Jan 25 11:43 .git/
+-rw-------@  1 w_c_funk  admin   140B Jan 25 11:21 .gitignore
 
 #### Ex. 7: List (long format) the contents of the directory `.git`
 
+ls -la /Users/w_c_funk/OneDrive\ -\ Colostate/MY\ COURSES/BZ581A2_bioinformatics_and_computing/BZ581A2_2022/BZ581A2_2022_week02/cons-genomics-homework-repo/.git
 
+------
+total 56
+drwxr-xr-x@ 13 w_c_funk  admin   416B Jan 25 11:56 ./
+drwxr-xr-x@ 15 w_c_funk  admin   480B Jan 25 11:22 ../
+-rw-------@  1 w_c_funk  admin    27B Jan 25 11:26 HEAD
+drwxr-xr-x@  2 w_c_funk  admin    64B Jan 25 11:21 branches/
+-rw-------@  1 w_c_funk  admin   393B Jan 25 11:26 config
+-rw-------@  1 w_c_funk  admin    73B Jan 25 11:21 description
+drwxr-xr-x@ 13 w_c_funk  admin   416B Jan 25 11:21 hooks/
+-rw-------@  1 w_c_funk  admin   8.0K Jan 25 11:32 index
+drwxr-xr-x@  3 w_c_funk  admin    96B Jan 25 11:21 info/
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:21 logs/
+drwxr-xr-x@  4 w_c_funk  admin   128B Jan 25 11:21 objects/
+-rw-------@  1 w_c_funk  admin   186B Jan 25 11:21 packed-refs
+drwxr-xr-x@  5 w_c_funk  admin   160B Jan 25 11:21 refs/
 
 #### Ex. 8: If you wanted to type `ls fastq/DPCh_plate1_A06_S6.R1.fq.gz`
 ####        on the command line, what is the fewest keystrokes that can
 ####        get you `fastq/DPCh_plate1_A06_S6.R1.fq.gz` using TAB completion?
 
-
+I did it in 10 (counting TABs)...
 
 #### Ex. 9: Make a new directory called `lonely-fastqs`, and inside of that,
 ####        two directories R1 and R2.
 
+mkdir -p lonely-fastqs/{R1,R2}
 
 
 #### Ex. 10: Copy (not move) all the read1 (`R1`) fastq files in `fastqs`
@@ -84,145 +142,284 @@ my name is Eric
 ####         `lonely-fastqs/R2`. When you are done, list the contents of 
 ####         `lonely-fastqs/R1` and `lonely-fastqs/R2`
 
+cp fastq/*R1* lonely-fastqs/R1
+cp fastq/*R2* lonely-fastqs/R2
+ls lonely-fastqs/{R1,R2}
 
+------
+
+lonely-fastqs/R1:
+DPCh_plate1_A05_S5.R1.fq.gz   DPCh_plate1_C05_S29.R1.fq.gz  DPCh_plate1_E05_S53.R1.fq.gz  DPCh_plate1_G05_S77.R1.fq.gz
+DPCh_plate1_A06_S6.R1.fq.gz   DPCh_plate1_C06_S30.R1.fq.gz  DPCh_plate1_E06_S54.R1.fq.gz  DPCh_plate1_G06_S78.R1.fq.gz
+DPCh_plate1_A11_S11.R1.fq.gz  DPCh_plate1_C11_S35.R1.fq.gz  DPCh_plate1_E11_S59.R1.fq.gz  DPCh_plate1_G11_S83.R1.fq.gz
+DPCh_plate1_A12_S12.R1.fq.gz  DPCh_plate1_C12_S36.R1.fq.gz  DPCh_plate1_E12_S60.R1.fq.gz  DPCh_plate1_G12_S84.R1.fq.gz
+DPCh_plate1_B05_S17.R1.fq.gz  DPCh_plate1_D05_S41.R1.fq.gz  DPCh_plate1_F05_S65.R1.fq.gz  DPCh_plate1_H05_S89.R1.fq.gz
+DPCh_plate1_B06_S18.R1.fq.gz  DPCh_plate1_D06_S42.R1.fq.gz  DPCh_plate1_F06_S66.R1.fq.gz  DPCh_plate1_H06_S90.R1.fq.gz
+DPCh_plate1_B11_S23.R1.fq.gz  DPCh_plate1_D11_S47.R1.fq.gz  DPCh_plate1_F11_S71.R1.fq.gz  DPCh_plate1_H11_S95.R1.fq.gz
+DPCh_plate1_B12_S24.R1.fq.gz  DPCh_plate1_D12_S48.R1.fq.gz  DPCh_plate1_F12_S72.R1.fq.gz  DPCh_plate1_H12_S96.R1.fq.gz
+
+lonely-fastqs/R2:
+DPCh_plate1_A05_S5.R2.fq.gz   DPCh_plate1_C05_S29.R2.fq.gz  DPCh_plate1_E05_S53.R2.fq.gz  DPCh_plate1_G05_S77.R2.fq.gz
+DPCh_plate1_A06_S6.R2.fq.gz   DPCh_plate1_C06_S30.R2.fq.gz  DPCh_plate1_E06_S54.R2.fq.gz  DPCh_plate1_G06_S78.R2.fq.gz
+DPCh_plate1_A11_S11.R2.fq.gz  DPCh_plate1_C11_S35.R2.fq.gz  DPCh_plate1_E11_S59.R2.fq.gz  DPCh_plate1_G11_S83.R2.fq.gz
+DPCh_plate1_A12_S12.R2.fq.gz  DPCh_plate1_C12_S36.R2.fq.gz  DPCh_plate1_E12_S60.R2.fq.gz  DPCh_plate1_G12_S84.R2.fq.gz
+DPCh_plate1_B05_S17.R2.fq.gz  DPCh_plate1_D05_S41.R2.fq.gz  DPCh_plate1_F05_S65.R2.fq.gz  DPCh_plate1_H05_S89.R2.fq.gz
+DPCh_plate1_B06_S18.R2.fq.gz  DPCh_plate1_D06_S42.R2.fq.gz  DPCh_plate1_F06_S66.R2.fq.gz  DPCh_plate1_H06_S90.R2.fq.gz
+DPCh_plate1_B11_S23.R2.fq.gz  DPCh_plate1_D11_S47.R2.fq.gz  DPCh_plate1_F11_S71.R2.fq.gz  DPCh_plate1_H11_S95.R2.fq.gz
+DPCh_plate1_B12_S24.R2.fq.gz  DPCh_plate1_D12_S48.R2.fq.gz  DPCh_plate1_F12_S72.R2.fq.gz  DPCh_plate1_H12_S96.R2.fq.gz
 
 #### Ex. 11: do a recursive, short listing of the contents of `lonely-fastqs`
 
+ls -R lonely-fastqs/
 
+------
+
+R1/ R2/
+
+lonely-fastqs//R1:
+DPCh_plate1_A05_S5.R1.fq.gz   DPCh_plate1_C05_S29.R1.fq.gz  DPCh_plate1_E05_S53.R1.fq.gz  DPCh_plate1_G05_S77.R1.fq.gz
+DPCh_plate1_A06_S6.R1.fq.gz   DPCh_plate1_C06_S30.R1.fq.gz  DPCh_plate1_E06_S54.R1.fq.gz  DPCh_plate1_G06_S78.R1.fq.gz
+DPCh_plate1_A11_S11.R1.fq.gz  DPCh_plate1_C11_S35.R1.fq.gz  DPCh_plate1_E11_S59.R1.fq.gz  DPCh_plate1_G11_S83.R1.fq.gz
+DPCh_plate1_A12_S12.R1.fq.gz  DPCh_plate1_C12_S36.R1.fq.gz  DPCh_plate1_E12_S60.R1.fq.gz  DPCh_plate1_G12_S84.R1.fq.gz
+DPCh_plate1_B05_S17.R1.fq.gz  DPCh_plate1_D05_S41.R1.fq.gz  DPCh_plate1_F05_S65.R1.fq.gz  DPCh_plate1_H05_S89.R1.fq.gz
+DPCh_plate1_B06_S18.R1.fq.gz  DPCh_plate1_D06_S42.R1.fq.gz  DPCh_plate1_F06_S66.R1.fq.gz  DPCh_plate1_H06_S90.R1.fq.gz
+DPCh_plate1_B11_S23.R1.fq.gz  DPCh_plate1_D11_S47.R1.fq.gz  DPCh_plate1_F11_S71.R1.fq.gz  DPCh_plate1_H11_S95.R1.fq.gz
+DPCh_plate1_B12_S24.R1.fq.gz  DPCh_plate1_D12_S48.R1.fq.gz  DPCh_plate1_F12_S72.R1.fq.gz  DPCh_plate1_H12_S96.R1.fq.gz
+
+lonely-fastqs//R2:
+DPCh_plate1_A05_S5.R2.fq.gz   DPCh_plate1_C05_S29.R2.fq.gz  DPCh_plate1_E05_S53.R2.fq.gz  DPCh_plate1_G05_S77.R2.fq.gz
+DPCh_plate1_A06_S6.R2.fq.gz   DPCh_plate1_C06_S30.R2.fq.gz  DPCh_plate1_E06_S54.R2.fq.gz  DPCh_plate1_G06_S78.R2.fq.gz
+DPCh_plate1_A11_S11.R2.fq.gz  DPCh_plate1_C11_S35.R2.fq.gz  DPCh_plate1_E11_S59.R2.fq.gz  DPCh_plate1_G11_S83.R2.fq.gz
+DPCh_plate1_A12_S12.R2.fq.gz  DPCh_plate1_C12_S36.R2.fq.gz  DPCh_plate1_E12_S60.R2.fq.gz  DPCh_plate1_G12_S84.R2.fq.gz
+DPCh_plate1_B05_S17.R2.fq.gz  DPCh_plate1_D05_S41.R2.fq.gz  DPCh_plate1_F05_S65.R2.fq.gz  DPCh_plate1_H05_S89.R2.fq.gz
+DPCh_plate1_B06_S18.R2.fq.gz  DPCh_plate1_D06_S42.R2.fq.gz  DPCh_plate1_F06_S66.R2.fq.gz  DPCh_plate1_H06_S90.R2.fq.gz
+DPCh_plate1_B11_S23.R2.fq.gz  DPCh_plate1_D11_S47.R2.fq.gz  DPCh_plate1_F11_S71.R2.fq.gz  DPCh_plate1_H11_S95.R2.fq.gz
+DPCh_plate1_B12_S24.R2.fq.gz  DPCh_plate1_D12_S48.R2.fq.gz  DPCh_plate1_F12_S72.R2.fq.gz  DPCh_plate1_H12_S96.R2.fq.gz
 
 #### Ex. 12: Use the recursive (-r) option to remove `lonely-fastqs`
 ####         and its contents
 
+rm -r lonely-fastqs
 
+------
 
 #### Ex. 13: Make two new directories in the top level of the
 ####         repo called `fq_AB` and `fq_notAB`
 
+mkdir fq_AB fq_notAB
 
+------
 
 #### Ex. 14: Using the `[` `]` copy the R1 files in `fastqs` that
 ####         belong to sample names (the part immediately after `DPCh_plate1_`)
 ####         starting with an `A` or `B` to `fq_AB`.
 
+cp fastq/*[AB]* fq_AB
 
+------
 
 #### Ex. 15: Now, using negation (`^`) with `[` and `]` copy all the
 ####         R1 files that don't belong to sample names starting with an
 ####         `A` or a `B` to `fq_notAB`. When you are done, on the next line in
 ####         the code block, list the contents of `fq_AB` and `fq_notAB`.
 
+cp fastq/*_plate1_[^AB]* fq_notAB
 
+------
 
 #### Ex. 16: Remove `fq_AB` and `fq_notAB`, and their contents
 
+rm -r fq_AB/ fq_notAB/
 
+------
 
 #### Ex. 17: Using the `{,}` construct create five directories named 
 ####         `dir_A`, `dir_C`, `dir_E`, `dir_G`, and `dir_I`, and list them
 ####         (but not their contents) when you are done. (Think `ls -d`).
 
+mkdir dir_{A,C,E,G,I}
+ls dir_?
 
+------
+dir_A:
+
+dir_C:
+
+dir_E:
+
+dir_G:
+
+dir_I:
 
 #### Ex. 18: Using globbing, remove `dir_A`, `dir_C`, `dir_E`, `dir_G`, and `dir_I`,
 ####         using a command with 8 characters (including spaces)
 
+rmdir d*
 
+------
 
 #### Ex. 19: Create a directory called `nice_dir_name` and then use `echo`,
 ####         redirecting its output to create a file called `nice_file_name`
 ####         inside of `nice_dir_name` whose contents is the string
 ####         `A string in a file!`
 
+mkdir nice_dir_name
+echo 'A string in a file!' > nice_dir_name/nice_file_name
 
+------
 
 #### Ex. 20: Catenate the contents of `nice_dir_name/nice_file_name` to _stdout_
 
+cat nice_dir_name/nice_file_name
 
+------
 
+A string in a file!
 
 #### Ex. 21: Create a directory called `bad directory name with spaces`, and then,
 ####         with redirection, create a file inside it, named 
 ####         `bad file name with spaces` whose contents are the string
 ####         `Whoa! No spaces, please!`. Use backslash escaping instead of quoting
 
+mkdir bad\ directory\ name\ with\ spaces
+echo 'Whoa! No spaces, please!' > bad\ directory\ name\ with\ spaces/bad\ file\ name\ with\ spaces
 
-
+------
 
 #### Ex. 22: Catenate the contents of 
 ####         `bad directory name with spaces/bad file name with spaces` to stdout.
 
+cat bad\ directory\ name\ with\ spaces/bad\ file\ name\ with\ spaces
 
+------
+
+Whoa! No spaces, please!
 
 #### Ex. 23: List the directories (just the names, not the contents (`-d`)) of
 ####         `bad directory name with spaces` and `nice_dir_name`.
 
+ls -d bad\ directory\ name\ with\ spaces/ nice_dir_name
 
+------
+
+bad directory name with spaces// nice_dir_name/
 
 #### Ex. 24: Once you are convinced that you can list the directories
 ####         correctly in your terminal, recall that `ls` command (i.e. get it back on the
 ####         command line using the up arrow on your keyboard) and replace `ls` with
 ####         `rm -r` to remove them. BE CAREFUL with the rm command!
 
+rm -r bad\ directory\ name\ with\ spaces/ nice_dir_name/
 
+------
 
 #### Ex. 25: Why is it a good idea to `ls` things before removing them?
 
+To make sure you remove the correct directories and files (no more, no less).
 
+------
 
 #### Ex. 26: If you had just typed `rm -r bad directory name with spaces` 
 ####         what would Unix have tried to remove? (No command to type here,
 ####         just answer the question).
 
+It would think that each word is a separate directory or file, and try to remove each (if they existed).
 
+------
 
 #### Ex. 27: There are bam, sam, and fastq files, in the appropriately
 ####         named directories for sample `A05_S5`. Make a directory named `A05_S5`
 ####         and copy all those files into that new directory. List the directory
 ####         when you are done.
 
+mkdir A05_S5
+cp bam/*A05* A05_S5/
+cp fastq/*A05* A05_S5/
+cp sam/*A05* A05_S5/
+ls A05_S5/
 
+------
+
+DPCh_plate1_A05_S5.R1.fq.gz  DPCh_plate1_A05_S5.R2.fq.gz  DPCh_plate1_A05_S5.bam       DPCh_plate1_A05_S5.sam
 
 #### Ex. 28: remove the directory `A05_S5` and its contents
 
+rm -r A05_S5/
 
+------
 
 #### Ex. 29: Use `ls` to try to list the file `it_aint_here`
 
+ls it_aint_here
 
+------
+
+ls: it_aint_here: No such file or directory
 
 #### Ex. 30: Now, do the same thing but redirect _stderr_ into a file called 
 ####         `my_bad.txt`, and then catenate the contents of that file, and then remove it
 
+ls it_aint_here 2> my_bad.txt
+cat my_bad.txt
+rm my_bad.txt
 
+------
 
+ls: it_aint_here: No such file or directory
 
 #### Ex. 31: The files in `fastq` are text files, but they are all gzipped.
 ####         Using `gzcat` and a pipe, view the first 8 lines of 
 ####         `fastq/DPCh_plate1_C11_S35.R1.fq.gz`
 
+gzcat fastq/*C11_S35.R1* | head -n8
 
+------
 
+@K00364:64:HTYYCBBXX:1:1101:1824:48192/1
+GTAGAATAATAGTGAATCAAATCAAATGTTATTTGTCACATGCGCTGAATACAACAGGTGTGGACCTTACAGTGAAATGCTTCCTTACAAGCCCTTAACCAACAATGCAGTTTTAAGAAAAATGAGTGTGAGATAAGTAAAAAATAGAAAA
++
+AAFFFJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJFJJJJJJJJJJJAJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJFJJJJJJJJJJJJ7JJJJJJFFFFJJJJJJ7A7AJJAFAJJJJJFJJJJ-<JFJ-FFFJJJ
+@K00364:64:HTYYCBBXX:1:1101:2869:22080/1
+TTAAAACACGGTATGATGCAAGCAGCACAACACATCAATAACAAAAATACAAGAATTAGGGTCAGAAATCCAGTAACCACCATACTAGTGTACTTACCAAACCAGGCTCCCAACCAAGAGAACAGTCCAGACTCCTCCACCCTCGCCATGG
++
+-AAFFJJJJJJJJJJJJFFJJJFJFJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJFFJJJ<JJJJJJFFFFJFFJJJJJJAFJJJJJJJJJJJJJJJJJJFAJJJJJJJJJJJJJJJJJJJFJJJFAJJJJJJJFJJJJJJJJFFJJ
 
 #### Ex. 32: Do the same to see the first 8 lines of `fastq/DPCh_plate1_C11_S35.R2.fq.gz`
 
+gzcat fastq/*C11_S35.R2* | head -n8
 
+------
 
+(output gives weird green text from here on out, so not pasting here)
 
 #### Ex. 33: What do you notice about the names of the two reads in each 
 ####         file (Lines 1 and 5, that start with a `@`)
 
+They are the same except for the last numeral (which is either 1 or 2).
 
-
+------
 
 #### Ex. 34: Print the date, redirect it to a file called `now.txt`,
 ####         catenate that file to _stdout_ and then remove it
 
+date > now.txt
+cat now.txt
+rm now.txt
 
+------
+
+Mon Jan 31 12:02:57 MST 2022
 
 #### Ex. 35: Count the number of lines/words/characters (using `wc`)
 ####         in the two SAM files in the `sam` directory
 
+wc sam/*
 
+------
+
+   14219   45092  511203 sam/DPCh_plate1_A05_S5.sam
+   14150   43985  479977 sam/DPCh_plate1_A06_S6.sam
+   28369   89077  991180 total
 
 #### Ex. 36: Note that gzcat will decompress all files you give itand send the 
 ####         output to _stdout_. Knowing this, count how many lines are in all 
@@ -230,12 +427,20 @@ my name is Eric
 ####         and also count up all the lines in the `R1` files in `fastq`. 
 ####         Note they should be the same.
 
+gzcat fastq/*R1* | wc
+gzcat fastq/*R2* | wc
 
+------
+
+ 19364   19364 1678394
+ 19364   19364 1678394
 
 #### Ex. 37: Now, gzcat all the `R1` files in `fastq` and redirect that
 ####         to a file called `R1_all_via_gzcat.fq` in the top directory of the repo
 
+gzcat fastq/*R1* > R1_all_via_gzcat.fq
 
+------
 
 #### Ex. 38: People are usually familiar with using `cat` to catenate text
 ####         files. It turns out that you can also catenate `gzip` compressed files. 
@@ -243,79 +448,142 @@ my name is Eric
 ####         Catenate all the gzipped `R1` files in `fastq` into a single (still gzipped)
 ####         file called `R1_all_via_cat.fq.gz`
 
+cat fastq/*R1* > fastq/R1_all_via_cat.fq.gz
 
+------
 
 #### Ex. 39: Copy `R1_all_via_cat.fq.gz` to `copy_of_R1_all_via_cat.fq.gz`
+
+cp fastq/R1_all_via_cat.fq.gz fastq/copy_of_R1_all_via_cat.fq.gz
+
+------
 
 
 
 
 #### Ex. 40: Now, decompress `R1_all_via_cat.fq.gz` into `R1_all_via_cat.fq`
 
+gunzip fastq/R1_all_via_cat.fq.gz
 
-
+------
 
 #### Ex. 41: Compute the SHA1 hashes of `R1_all_via_cat.fq` and `R1_all_via_gzcat.fq`
 ####         to confirm they are identical
 
+shasum R1_all_via_gzcat.fq
+shasum fastq/R1_all_via_cat.fq
 
+------
+
+d5b95bf950e8150c56aed90eea9febeb23ddd856  R1_all_via_gzcat.fq
+d5b95bf950e8150c56aed90eea9febeb23ddd856  fastq/R1_all_via_cat.fq
 
 
 #### Ex. 42: But now, gzip `R1_all_via_gzcat.fq` and compare the result to
 ####         `copy_of_R1_all_via_cat.fq.gz` by computing the SHA1 hash of each
 
+gzip fastq/R1_all_via_cat.fq
+shasum fastq/R1_all_via_cat.fq.gz
+shasum fastq/copy_of_R1_all_via_cat.fq.gz
+
+------
+
+de4244443dfb491b176e855d515ed4b6409fb58d  fastq/R1_all_via_cat.fq.gz
+93588c00857e42325bf64bb0ea5992307460737c  fastq/copy_of_R1_all_via_cat.fq.gz
 
 
 #### Ex. 43: using `du` with the `-h` (i.e. "human readable" option) print the
 ####         file sizes of `R1_all_via_cat.fq` and `copy_of_R1_all_via_cat.fq.gz`.
 
+gunzip fastq/R1_all_via_cat.fq.gz
+du -h fastq/R1_all_via_cat.fq
+du -h fastq/copy_of_R1_all_via_cat.fq.gz
 
+------
 
+1.6M	fastq/R1_all_via_cat.fq
+420K	fastq/copy_of_R1_all_via_cat.fq.gz
 
 #### Ex. 44: By what factor (approximately) does the compression save storage
 ####         space on your disk?
 
+4X
 
-
+------
 
 #### Ex. 45: Remove all files starting with `R1_all` and `copy_of_R1`
 
+rm R1_all*
+rm fastq/R1_all*
+rm fastq/copy_of_R1*
 
-
+------
 
 #### Ex. 46: Now, print the file sizes (with `du -h`, again) of the files
 ####         in `bam` to the files in `sam`
 
+du -h bam/* >> sam/DPCh_plate1_A05_S5.sam
+du -h bam/* >> sam/DPCh_plate1_A06_S6.sam
 
-
+------
 
 #### Ex. 47: Print the last 15 lines of `sam/DPCh_plate1_A05_S5.sam` to _stdout_
 
+tail -n15 sam/DPCh_plate1_A05_S5.sam 
 
+------
 
+(output gives weird green text from here on out, so not pasting here)
 
 #### Ex. 48: Print the _first_ 15 lines of `sam/DPCh_plate1_A05_S5.sam` to _stdout_
 
+head -n15 sam/DPCh_plate1_A05_S5.sam
 
+------
 
+@HD	VN:1.3	SO:coordinate
+@SQ	SN:NC_037097.1	LN:96198142
+@SQ	SN:NC_037098.1	LN:57406636
+@SQ	SN:NC_037099.1	LN:81079776
+@SQ	SN:NC_037100.1	LN:74299616
+@SQ	SN:NC_037101.1	LN:93271540
+@SQ	SN:NC_037102.1	LN:77009353
+@SQ	SN:NC_037103.1	LN:86953105
+@SQ	SN:NC_037104.1	LN:73297397
+@SQ	SN:NC_037105.1	LN:90872356
+@SQ	SN:NC_037106.1	LN:60898746
+@SQ	SN:NC_037107.1	LN:48052637
+@SQ	SN:NC_037108.1	LN:77127610
+@SQ	SN:NC_037109.1	LN:75288599
+@SQ	SN:NC_037110.1	LN:55471129
 
 #### Ex. 49: Catenate the file `count_files.sh` to _stdout_
 
+cat count_files.sh
 
+------
+
+ls -lR  * | awk 'NF>7' | wc | awk '{print "Estimated", $1, "files in the current directory"}'
 
 
 #### Ex. 50: Note that `count_files.sh` is a short shell script. Try to 
 ####         execute it with `./count_files.sh`
 
+./count_files.sh
 
+------
 
-
+Estimated 79 files in the current directory
 
 #### Ex. 51: List (long) `count_files.sh` to see what the permissions are,
 ####         and then add execute (`x`) permissions to users and groups with
 ####         the "add-or-subtract permissions syntax" of `chmod`, then long list it again
 
+ls -l count_files.sh
 
+------
+
+-rwxr-xr-x@ 1 w_c_funk  admin    96B Jan 25 11:21 count_files.sh*
 
 
 #### Ex. 52: Use chmod to change permissions of the files in the `silly`
@@ -324,4 +592,20 @@ my name is Eric
 ####         specifiers to `chmod`. Do this for all 5 files (one chmod command for each),
 ####         and at the end do `ls -l silly` to verify they are correct.
 
+chmod 775 silly/DIRdrwxrwxr-x/
+chmod 640 silly/FILE-rw-r-----
+chmod 664 silly/FILE-rw-rw-r--
+chmod 740 silly/FILE-rwxr-----
+chmod 774 silly/FILE-rwxrwxr--
+ls -l silly/
 
+------
+
+total 0
+drwxr-xr-x@  7 w_c_funk  admin   224B Jan 25 11:21 ./
+drwxr-xr-x@ 15 w_c_funk  admin   480B Jan 31 12:15 ../
+drwxrwxr-x@  3 w_c_funk  admin    96B Jan 25 11:21 DIRdrwxrwxr-x/
+-rw-r-----@  1 w_c_funk  admin     0B Jan 25 11:21 FILE-rw-r-----
+-rw-rw-r--@  1 w_c_funk  admin     0B Jan 25 11:21 FILE-rw-rw-r--
+-rwxr-----@  1 w_c_funk  admin     0B Jan 25 11:21 FILE-rwxr-----*
+-rwxrwxr--@  1 w_c_funk  admin     0B Jan 25 11:21 FILE-rwxrwxr--*
