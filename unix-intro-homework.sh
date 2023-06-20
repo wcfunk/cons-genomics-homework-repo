@@ -37,7 +37,7 @@ echo "my name is Eric"
 
 ------
 
-my name is Eric Anderson
+my name is Eric
 
 
 
